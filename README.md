@@ -31,13 +31,15 @@ yarn add import-http --dev
 
 ## Usage
 
+### Webpack
+
 In your `webpack.config.js`:
 
 ```js
-const ImportHttpPlugin = require('import-http')
+const ImportHttpWebpackPlugin = require('import-http/webpack')
 
 module.exports = {
-  plugins: [new ImportHttpPlugin()]
+  plugins: [new ImportHttpWebpackPlugin()]
 }
 ```
 
@@ -52,16 +54,26 @@ console.log(React, Vue)
 
 Run webpack and it just works.
 
+### Rollup
+
+In your `rollup.config.js`:
+
+```js
+export default {
+  plugins: [require('import-http/rollup')()]
+}
+```
+
 ## Caching
 
 Resources will be fetched at the very first build, then the response will be cached in `~/.import-http` dir. You can use the `reload` option to invalidate cache:
 
 ```js
-const ImportHttpPlugin = require('import-http')
+const ImportHttpWebpackPlugin = require('import-http/webpack')
 
 module.exports = {
   plugins: [
-    new ImportHttpPlugin({
+    new ImportHttpWebpackPlugin({
       reload: process.env.RELOAD
     })
   ]

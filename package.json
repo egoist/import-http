@@ -4,7 +4,9 @@
   "description": "Import modules from http instead of local node_modules",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "rollup.js",
+    "webpack.js"
   ],
   "scripts": {
     "test": "npm run lint && jest",

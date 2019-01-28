@@ -1,7 +1,7 @@
 const path = require('path')
 const util = require('util')
 const webpack = require('webpack')
-const HttpImport = require('..')
+const { WebpackPlugin } = require('..')
 
 jest.setTimeout(30000)
 
@@ -15,7 +15,7 @@ test('main', async () => {
       filename: 'main.js'
     },
     plugins: [
-      new HttpImport({
+      new WebpackPlugin({
         reload: true,
         cacheDir: path.join(__dirname, 'fixture/cache')
       })

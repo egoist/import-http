@@ -1,4 +1,4 @@
-const ImportHttpPlugin = require('..')
+const ImportHttpPlugin = require('../webpack')
 
 module.exports = {
   mode: 'development',
