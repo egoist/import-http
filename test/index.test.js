@@ -22,6 +22,7 @@ test('main', async () => {
     ]
   })
   const stats = await util.promisify(compiler.run.bind(compiler))()
-  expect(stats.hasErrors()).toBe(false)
-  expect(stats.hasWarnings()).toBe(false)
+  if (stats.hasErrors()) {
+    throw new Error(stats.toString('errors-only'))
+  }
 })
