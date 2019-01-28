@@ -1,0 +1,75 @@
+{
+  "name": "import-http",
+  "version": "0.0.0",
+  "description": "Import modules from http instead of local node_modules",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "npm run lint && jest",
+    "lint": "xo"
+  },
+  "repository": {
+    "url": "egoist/import-http",
+    "type": "git"
+  },
+  "author": "egoist<0x142857@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "builtin-modules": "^3.0.0",
+    "mkdirp": "^0.5.1",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "commitizen": "^3.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.3.1",
+    "jest": "^24.0.0",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.15.2",
+    "semantic-release": "^15.13.3",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "extends": [
+      "rem",
+      "plugin:prettier/recommended"
+    ],
+    "ignores": [
+      "**/{dist,cache,fixture,example}/**"
+    ],
+    "envs": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "xo --fix",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "release": {
+    "branch": "master"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
