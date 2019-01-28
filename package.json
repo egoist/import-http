@@ -1,6 +1,6 @@
 {
   "name": "import-http",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Import modules from http instead of local node_modules",
   "main": "lib/index.js",
   "files": [
