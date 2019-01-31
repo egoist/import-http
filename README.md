@@ -66,7 +66,7 @@ export default {
 
 ## Caching
 
-Resources will be fetched at the very first build, then the response will be cached in `~/.import-http` dir. You can use the `reload` option to invalidate cache:
+Resources will be fetched at the very first build, then the response will be cached in `~/.cache/import-http` dir. You can use the `reload` option to invalidate cache:
 
 ```js
 const ImportHttpWebpackPlugin = require('import-http/webpack')
