@@ -2173,6 +2173,11 @@ env-editor@^0.3.1:
   resolved "https://registry.npmjs.org/env-editor/-/env-editor-0.3.1.tgz#30d0540c2101414f258a94d4c0a524c06c13e3c6"
   integrity sha1-MNBUDCEBQU8lipTUwKUkwGwT48Y=
 
+env-paths@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-2.0.0.tgz#5a71723f3df7ca98113541f6fa972184f2c9611d"
+  integrity sha512-13VpSqOO91W3MskXxWJ8x+Y33RKaPT53/HviPp8QcMmEbAJaPFEm8BmMpxCHroJ5rGADqr34Zl6zosBt3F+xAA==
+
 err-code@^1.0.0:
   version "1.1.2"
   resolved "https://registry.npmjs.org/err-code/-/err-code-1.1.2.tgz#06e0116d3028f6aef4806849eb0ea6a748ae6960"
