@@ -2,16 +2,16 @@
 
 ---
 
-[![NPM version](https://badgen.net/npm/v/import-http)](https://npmjs.com/package/import-http) [![NPM downloads](https://badgen.net/npm/dm/import-http)](https://npmjs.com/package/import-http) [![CircleCI](https://badgen.net/circleci/github/egoist/import-http/master)](https://circleci.com/gh/egoist/import-http/tree/master) [![donate](https://badgen.net/badge/support%20me/donate/ff69b4)](https://patreon.com/egoist) [![chat](https://badgen.net/badge/chat%20on/discord/7289DA)](https://chat.egoist.sh)
+[![NPM version](https://badgen.net/npm/v/import-http)](https://npmjs.com/package/import-http) [![NPM downloads](https://badgen.net/npm/dm/import-http)](https://npmjs.com/package/import-http) [![CircleCI](https://badgen.net/circleci/github/egoist/import-http/master)](https://circleci.com/gh/egoist/import-http/tree/master) [![donate](https://badgen.net/badge/support%20me/donate/ff69b4)](https://github.com/sponsors/egoist) [![chat](https://badgen.net/badge/chat%20on/discord/7289DA)](https://chat.egoist.sh)
 
-**Please consider [donating](https://www.patreon.com/egoist) to this project's author, [EGOIST](#author), to show your ❤️ and support.**
+**Please consider [donating](https://github.com/sponsors/egoist) to this project's author, [EGOIST](#author), to show your ❤️ and support.**
 
 ## Introduction
 
 - Imports source code URLs! Like `<script type="module">` and [Deno](https://github.com/denoland/deno) but implemented as a webpack/Rollup plugin. Embracing the future :)
 
   ```js
-  import template from 'https://unpkg.com/lodash/template'
+  import template from 'https://unpkg.com/lodash-es/template'
 
   console.log(template(`Hello <%= name %>`)({ name: 'EGOIST' }))
   ```
