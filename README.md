@@ -8,7 +8,7 @@
 
 ## Introduction
 
-- Imports source code URLs! Like `<script type="module">` and [Deno](https://github.com/denoland/deno) but implemented in webpack. Embracing the future :)
+- Imports source code URLs! Like `<script type="module">` and [Deno](https://github.com/denoland/deno) but implemented as a webpack/Rollup plugin. Embracing the future :)
 
   ```js
   import template from 'https://unpkg.com/lodash/template'
