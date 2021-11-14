@@ -21,7 +21,7 @@
 
 - No more `node_modules` bloat, no dependency to install.
 
-![image](https://unpkg.com/@egoist/media/projects/import-http/preview.svg)
+![image](https://i.imgur.com/l3lHH2v.gif)
 
 ## Install
 
